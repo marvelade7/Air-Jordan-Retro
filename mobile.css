@@ -1,4 +1,4 @@
-@media (min-width:1201px) and (max-width:1350px) {
+@media (min-width: 1201px) and (max-width: 1350px) {
     #img {
         width: 750px;
         left: -200px;
@@ -9,7 +9,7 @@
     }
 }
 
-@media (min-width:1089px) and (max-width:1200px) {
+@media (min-width: 1089px) and (max-width: 1200px) {
     #img {
         width: 650px;
         left: -200px;
@@ -20,32 +20,37 @@
     }
 }
 
-@media (min-width:769px) and (max-width:1087px) {
-    nav {
+@media (min-width: 895px) and (max-width: 1087px) {
+    .navbar {
         padding: 10px 30px;
     }
-
     h1 {
         font-size: 4em;
         line-height: 70px;
     }
     #header-content {
+        width: 100%;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
     #header-img {
-        background: linear-gradient(180deg, rgb(1,204,251), rgb(27,87,203), rgb(0,105,161));
+        background: linear-gradient(
+            180deg,
+            rgb(1, 204, 251),
+            rgb(27, 87, 203),
+            rgb(0, 105, 161)
+        );
         display: block;
-        width: 80%;
-    }
-    
-    #header-img img {
         width: 100%;
+    }
+
+    #header-img img {
+        width: 80%;
         transform: rotate(340deg);
         animation-name: fadeIn;
         animation-duration: 3s;
-        transition: .3s;
+        transition: 0.3s;
         opacity: 1;
     }
 
@@ -59,11 +64,11 @@
             transform: rotate(340deg);
         }
     }
-    
+
     .right-section {
         display: none;
     }
-    
+
     .left-section {
         padding: 70px;
         height: 100%;
@@ -78,7 +83,6 @@
     .card {
         width: 100%;
     }
-
 
     .card img {
         width: 100%;
@@ -109,12 +113,12 @@
     }
 }
 
-@media (min-width:577px) and (max-width:768px) {
-    .navbar{
+@media (min-width: 769px) and (max-width: 895px) {
+    ul li {
         display: none;
     }
-    nav {
-        padding: 5px 80px;
+    .navbar {
+        padding: 5px 90px;
         width: 100%;
     }
     nav button {
@@ -140,16 +144,21 @@
     }
 
     #header-img {
-        background: linear-gradient(180deg, rgb(1,204,251), rgb(27,87,203), rgb(0,105,161));
+        background: linear-gradient(
+            180deg,
+            rgb(1, 204, 251),
+            rgb(27, 87, 203),
+            rgb(0, 105, 161)
+        );
         display: block;
     }
-    
+
     #header-img img {
         width: 100%;
         transform: rotate(340deg);
         animation-name: fadeIn;
         animation-duration: 3s;
-        transition: .3s;
+        transition: 0.3s;
         opacity: 1;
     }
 
@@ -163,11 +172,11 @@
             transform: rotate(340deg);
         }
     }
-    
+
     .right-section {
         display: none;
     }
-    
+
     .left-section {
         padding: 70px;
         height: 100%;
@@ -218,7 +227,7 @@
         padding: 70px;
         flex-direction: column;
     }
-    
+
     .best-img {
         width: 80%;
     }
@@ -236,18 +245,154 @@
     }
 }
 
-
-@media screen and (max-width:576px) {
-    .navbar{
+@media (min-width: 577px) and (max-width: 768px) {
+    ul li {
         display: none;
     }
-    nav {
+    .navbar {
         padding: 5px 40px;
+        width: 100%;
+    }
+    nav button {
+        padding: 7px 10px;
+        border-radius: 4px;
+    }
+
+    nav img {
+        width: 60px;
+    }
+
+    header {
+        padding: 0px 10px;
+    }
+    h1 {
+        font-size: 4em;
+        line-height: 60px;
+    }
+
+    #header-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #header-img {
+        background: linear-gradient(
+            180deg,
+            rgb(1, 204, 251),
+            rgb(27, 87, 203),
+            rgb(0, 105, 161)
+        );
+        display: block;
+    }
+
+    #header-img img {
+        width: 100%;
+        transform: rotate(340deg);
+        animation-name: fadeIn;
+        animation-duration: 3s;
+        transition: 0.3s;
+        opacity: 1;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: rotate(320deg);
+        }
+        to {
+            opacity: 1;
+            transform: rotate(340deg);
+        }
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    .left-section {
+        padding: 70px;
+        height: 100%;
+        width: 100%;
+    }
+    .new-arrival {
+        padding: 50px;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    #card {
+        width: 70%;
+        margin: 5px auto;
+    }
+    #card img {
+        width: 100%;
+    }
+    .review-section {
+        padding: 70px;
+    }
+
+    #review {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #review p {
+        text-align: center;
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+    }
+    .head {
+        width: 100%;
+        margin-bottom: 300px;
+        margin: 10px auto;
+    }
+    .head h1 {
+        font-size: 2.5em;
+        line-height: 50px;
+    }
+    .head p {
+        font-size: 1.2em;
+    }
+    .best {
+        padding: 70px;
+        flex-direction: column;
+    }
+
+    .best-img {
+        width: 80%;
+    }
+    footer {
+        padding: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    footer img {
+        width: 70px;
+    }
+    .first {
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    ul li {
+        display: none;
+    }
+    .navbar {
+        padding: 5px 20px;
         width: 100%;
     }
     nav button {
         padding: 5px 10px;
         border-radius: 4px;
+        margin: 0;
+    }
+
+    ul {
+        display: none;
     }
 
     nav img {
@@ -276,21 +421,27 @@
     }
 
     #header-content {
+        width: 100%;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
     #header-img {
-        background: linear-gradient(180deg, rgb(1,204,251), rgb(27,87,203), rgb(0,105,161));
+        background: linear-gradient(
+            180deg,
+            rgb(1, 204, 251),
+            rgb(27, 87, 203),
+            rgb(0, 105, 161)
+        );
         display: block;
     }
-    
+
     #header-img img {
         width: 100%;
         transform: rotate(340deg);
         animation-name: fadeIn;
         animation-duration: 3s;
-        transition: .3s;
+        transition: 0.3s;
         opacity: 1;
     }
 
@@ -304,11 +455,11 @@
             transform: rotate(340deg);
         }
     }
-    
+
     .right-section {
         display: none;
     }
-    
+
     .left-section {
         padding: 50px;
         height: 100%;

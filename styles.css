@@ -1,9 +1,15 @@
 * {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+    box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
 
-li{
+li {
     list-style: none;
 }
 
@@ -12,21 +18,17 @@ li a {
     font-weight: 400;
     color: black;
     text-decoration: none;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 li a:hover {
-    color: rgb(1,204,251);
+    color: rgb(1, 204, 251);
 }
 
-nav {
+.navbar {
     padding: 0px 150px;
-    position: fixed;
     right: 0;
     left: 0;
-    top: 0;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
     z-index: 1000;
 }
 
@@ -41,11 +43,11 @@ nav button {
     color: white;
     padding: 7px 15px;
     border-radius: 7px;
-    font-size: .9em;
-    transition: .3s;
+    font-size: 0.9em;
+    transition: 0.3s;
 }
 
-nav button:hover{
+nav button:hover {
     background-color: darkred;
 }
 
@@ -56,15 +58,15 @@ h1 {
 }
 
 .retro {
-    color: rgb(0,119,182);
+    color: rgb(0, 119, 182);
 }
 
 #header-content {
-    padding: 80px 0px;
-    position: relative;
+    padding: 50px 0px;
+    position: static;
 }
 
-.left-section{
+.left-section {
     padding: 70px 150px 0;
     height: 100vh;
     width: 50vw;
@@ -74,23 +76,28 @@ h1 {
     display: none;
 }
 
-.right-section{
+.right-section {
     height: 100vh;
     top: 0;
     right: 0;
     width: 50vw;
     padding: 0px 150px 0;
-    background: linear-gradient(180deg, rgb(1,204,251), rgb(27,87,203), rgb(0,105,161));
+    background: linear-gradient(
+        180deg,
+        rgb(1, 204, 251),
+        rgb(27, 87, 203),
+        rgb(0, 105, 161)
+    );
     /* z-index: 1001; */
 }
 
-#img{
+#img {
     transform: rotate(340deg);
     left: -300px;
     top: 120px;
     animation-name: fadeIn;
     animation-duration: 3s;
-    transition: .3s;
+    transition: 0.3s;
     opacity: 1;
 }
 
@@ -105,13 +112,13 @@ h1 {
     }
 }
 
-.left-section button, .left button {
+.left-section button,
+.left button {
     padding: 7px 20px;
     font-size: 1em;
     margin-right: 10px;
     cursor: pointer;
     margin-bottom: 10px;
-    
 }
 
 .btn1 {
@@ -129,7 +136,6 @@ h1 {
 .new-arrival {
     padding: 80px 150px;
     width: 100%;
-    
 }
 
 .card {
@@ -145,12 +151,11 @@ h1 {
 .card img {
     transform: rotate(-20deg);
     width: 300px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .card img:hover {
     transition: 1.3s;
-    /* transform: rotate(-15deg); */
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -165,18 +170,16 @@ h1 {
 #card {
     border: none;
     width: 400px;
-    /* height: 500px; */
 }
 
 .card-text {
-    color: rgb(1,204,251);
+    color: rgb(1, 204, 251);
     font-weight: 600;
     font-size: 1.3em;
 }
 
 .best {
     padding: 80px 150px;
-    /* justify-content: center; */
 }
 
 .best h1 {
@@ -191,7 +194,6 @@ h1 {
 
 .best .retro {
     font-size: 4em;
-    /* line-height: 70px; */
 }
 
 .left {
@@ -242,7 +244,7 @@ footer {
 #footer-links p {
     cursor: pointer;
     /* font-weight: 400; */
-    transition: .3s;
+    transition: 0.3s;
 }
 
 #footer-links p:hover {
@@ -253,7 +255,9 @@ p {
     font-weight: 500;
 }
 
-h1, h3, h4{
+h1,
+h3,
+h4 {
     font-weight: 700;
 }
 
